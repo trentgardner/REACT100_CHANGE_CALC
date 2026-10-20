@@ -1,1 +1,140 @@
 /* Add your custom css here */
+
+body {
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 64px 16px;
+}
+
+/* Header */
+.app-header {
+  margin-bottom: 32px;
+}
+
+.app-header h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  color: #94a3b8;
+  margin: 0;
+}
+
+/* Cards */
+.panel {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 24px;
+  height: 100%;
+}
+
+/* Form */
+.field-label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 6px;
+}
+
+.field-input {
+  border-radius: 8px;
+  background: #0f172a;
+  color: #e2e8f0;
+  border-color: #334155;
+  padding: 10px 12px;
+  margin-bottom: 20px;
+}
+
+.field-input::placeholder {
+  color: #64748b;
+}
+
+.field-input:focus {
+  background: #0f172a;
+  color: #e2e8f0;
+  border-color: #4f7cac;
+  box-shadow: 0 0 0 3px rgba(79, 124, 172, 0.25);
+}
+
+.calc-button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #4f7cac;
+  color: #fff;
+  font-weight: 500;
+  transition: background 0.15s;
+}
+
+.calc-button:hover {
+  background: #5d8bbd;
+}
+
+/* Result message */
+.result {
+  padding: 14px 16px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+
+.result-success {
+  background: #14342a;
+  color: #86d9a8;
+}
+
+.result-error {
+  background: #3b1d22;
+  color: #f2a3a3;
+}
+
+.result-empty {
+  background: #172033;
+  color: #64748b;
+  font-weight: 400;
+}
+
+/* Denomination grid */
+.denoms {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.denom {
+  border: 1px solid #334155;
+  background: #172033;
+  border-radius: 8px;
+  padding: 16px 8px;
+  text-align: center;
+}
+
+.denom-count {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.denom-label {
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+@media (max-width: 576px) {
+  .denoms {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
